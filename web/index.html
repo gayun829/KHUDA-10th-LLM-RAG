@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>쿠다봇 · RAG 챗봇</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="app">
+
+    <!-- ① 머리글 : 봇 이름 + 서버 상태 (app.js가 /api/info를 읽어 채운다) -->
+    <header class="top">
+      <div class="logo">K</div>
+      <div class="who">
+        <h1>쿠다봇</h1>
+        <p id="status">서버에 연결하는 중…</p>
+      </div>
+    </header>
+
+    <!-- ② 대화창 : app.js가 말풍선을 여기에 하나씩 붙인다 -->
+    <main id="chat" class="chat">
+      <div class="msg bot">
+        <div class="bubble">안녕하세요, KHUDA 문의 챗봇 쿠다봇이에요.
+지원 자격 · 활동 · 트랙 · 회칙을 물어보세요.</div>
+      </div>
+      <div id="examples" class="examples">
+        <button type="button">비전공자도 지원할 수 있어?</button>
+        <button type="button">무단 결석하면 어떻게 돼?</button>
+        <button type="button">심화 트랙은 뭐가 있어?</button>
+        <button type="button">경고 몇 번이면 제명돼?</button>
+      </div>
+    </main>
+
+    <!-- ③ 입력창 -->
+    <form id="form" class="composer">
+      <textarea id="input" rows="1" placeholder="질문을 입력하세요 (Enter 보내기 · Shift+Enter 줄바꿈)"></textarea>
+      <button id="send" type="submit">보내기</button>
+    </form>
+
+  </div>
+  <script src="/static/app.js"></script>
+</body>
+</html>

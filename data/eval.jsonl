@@ -1,0 +1,20 @@
+{"id": "q01", "type": "사실", "question": "KHUDA의 영어 이름은 뭐야?", "evidence": ["KyungHee University Data Analysis and Artificial Intelligence"], "keywords": [["Artificial"]], "doc": "rules"}
+{"id": "q02", "type": "사실", "question": "KHUDA는 어느 캠퍼스 소속이야?", "evidence": ["경희대학교 국제캠퍼스에 소속한다"], "keywords": [["국제"]], "doc": "rules"}
+{"id": "q03", "type": "사실", "question": "KHUDA가 2025년에 받은 상은 뭐야?", "evidence": ["경희대학교 2025 최우수 동아리"], "keywords": [["최우수"]], "doc": "about"}
+{"id": "q04", "type": "사실", "question": "임원진 임기는 얼마나 돼?", "evidence": ["임원진의 임기는 6개월로 하며"], "keywords": [["6개월"]], "doc": "rules"}
+{"id": "q05", "type": "사실", "question": "경고를 몇 번 받으면 제명 심의를 해?", "evidence": ["경고를 3회 이상 받게 되면"], "keywords": [["3회", "3번", "세번"]], "doc": "rules"}
+{"id": "q06", "type": "사실", "question": "회비는 가입하고 언제까지 내야 해?", "evidence": ["가입 1주 이내로 회비를 제출"], "keywords": [["1주", "일주일", "7일"]], "doc": "rules"}
+{"id": "q07", "type": "사실", "question": "무단 지각을 몇 번 하면 경고를 받아?", "evidence": ["무단 지각 2회가 누적되면 경고 1회를 부과한다"], "keywords": [["2회", "2번", "두번"]], "doc": "rules"}
+{"id": "q08", "type": "사실", "question": "정기 학술제 심사위원은 누구야?", "evidence": ["교수님을 비롯해 현직자 분들이 심사위원으로 참여합니다"], "keywords": [["교수"], ["현직자"]], "doc": "activities"}
+{"id": "q09", "type": "사실", "question": "트랙 배정은 어떻게 정해져?", "evidence": ["본인의 희망 트랙을 우선적으로 반영하여 배정합니다"], "keywords": [["희망"]], "doc": "faq"}
+{"id": "q10", "type": "사실", "question": "탈퇴했다가 다시 들어올 수 있어?", "evidence": ["탈퇴자는 모든 방법의 재가입을 불허한다"], "keywords": [["불허", "불가", "없", "안됩", "안돼"]], "doc": "rules"}
+{"id": "q11", "type": "용어", "question": "KHU'DATA가 뭐야?", "evidence": ["트랙 구분 없이 팀을 구성해 주어진 데이터셋과 문제를 해결하는 대회입니다"], "keywords": [["데이터톤", "대회"]], "doc": "activities"}
+{"id": "q12", "type": "용어", "question": "러닝메이트 제도가 뭐야?", "evidence": ["러닝메이트 제도로 출마한다"], "keywords": [["회장"], ["부회장"]], "doc": "rules"}
+{"id": "q13", "type": "용어", "question": "OT도 꼭 가야 해?", "evidence": ["OT, 기초 세션, 심화 세션에 필수적으로 참여해야 해요"], "keywords": [["필수"]], "doc": "recruit"}
+{"id": "q14", "type": "용어", "question": "Track Session에서는 뭘 해?", "evidence": ["학기 중에는 관심 분야에 따라 6개 트랙 중 선택하여"], "keywords": [["트랙"], ["학기", "논문", "사례", "전문"]], "doc": "activities"}
+{"id": "q15", "type": "표현 바꿈", "question": "학교를 마친 사람도 신청할 수 있나요?", "evidence": ["현재 경희대학교 소속 누구나"], "keywords": [["소속"]], "doc": "rules"}
+{"id": "q16", "type": "표현 바꿈", "question": "할머니가 돌아가셔서 세션에 못 가면 결석 처리돼?", "evidence": ["직계가족((외)조부모, 부모), 형제자매, 배우자의 사망 (5일)"], "keywords": [["인정", "출석", "되지않"]], "doc": "rules"}
+{"id": "q17", "type": "표현 바꿈", "question": "문과생도 지원할 수 있어?", "evidence": ["전공에 관계없이"], "keywords": [["가능", "환영", "관계없"]], "doc": "faq"}
+{"id": "q18", "type": "두 문서", "question": "기초 세션은 무슨 요일에 하고, 무단으로 빠지면 어떻게 돼?", "evidence": ["방학 중 매주 수요일", "무단 결석 1회가 누적되면 경고 1회가 부과된다"], "keywords": [["수요일"], ["경고"]], "doc": "recruit, rules"}
+{"id": "q19", "type": "답 없음", "question": "KHUDA 인스타그램 계정이 뭐야?", "evidence": [], "keywords": [], "doc": ""}
+{"id": "q20", "type": "답 없음", "question": "MT는 언제 가?", "evidence": [], "keywords": [], "doc": ""}
