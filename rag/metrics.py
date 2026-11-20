@@ -13,8 +13,7 @@ def recall_at_k(hit_texts, evidence, k):
     근거가 1개면 0 또는 1, 근거가 2개(두 문서를 봐야 하는 질문)면 0, 0.5, 1."""
     top = "\n".join(hit_texts[:k])
     # ---------------- TODO 5 ----------------
-    # 힌트 : return sum(e in top for e in evidence) / len(evidence)
-    return 0.0
+    return sum(e in top for e in evidence) / len(evidence)
     # ----------------------------------------
 
 

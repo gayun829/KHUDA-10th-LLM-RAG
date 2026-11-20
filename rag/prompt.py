@@ -11,9 +11,9 @@ def build_messages(question, hits):
     청크에 [1], [2], ... 번호를 붙여 질문 앞에 넣는다."""
     # ---------------- TODO 4 ----------------
     # 힌트 (두 줄 그대로) :
-    #   context = "\n\n".join("[%d] %s" % (i + 1, c["text"]) for i, (_, c) in enumerate(hits))
-    #   user = "[문서]\n%s\n\n[질문]\n%s" % (context, question)
-    user = question                         # 지금은 문서 없이 질문만 보낸다
+    context = "\n\n".join("[%d] %s" % (i + 1, c["text"]) for i, (_, c) in enumerate(hits))
+    user = "[문서]\n%s\n\n[질문]\n%s" % (context, question)
+                           # 지금은 문서 없이 질문만 보낸다
     # ----------------------------------------
     return [{"role": "system", "content": SYSTEM},
             {"role": "user", "content": user}]

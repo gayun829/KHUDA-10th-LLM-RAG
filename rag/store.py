@@ -19,10 +19,8 @@ class VectorStore:
         """cosine similarity가 가장 큰 청크 k개 → [(점수, 청크), ...] (점수가 큰 순서)"""
         # ---------------- TODO 3 ----------------
         # 힌트 (두 줄 그대로) :
-        #   scores = self.scores(query_vec)          # 청크마다 점수 하나
-        #   top = np.argsort(-scores)[:k]             # 점수가 큰 순서대로 k개의 번호
-        scores = np.zeros(len(self.chunks))
-        top = np.arange(min(k, len(self.chunks)))
+        scores = self.scores(query_vec)          # 청크마다 점수 하나
+        top = np.argsort(-scores)[:k]             # 점수가 큰 순서대로 k개의 번호
         # ----------------------------------------
         return [(float(scores[i]), self.chunks[i]) for i in top]
 

@@ -54,8 +54,7 @@ def create_app(store):
             return {"answer": "질문을 입력해 주세요.", "sources": [], "seconds": 0}
         try:
             # ---------------- TODO 6 ----------------
-            # 힌트 : reply, hits = answer(store, question, config.TOP_K)
-            reply, hits = "(TODO 6 : 서버가 아직 RAG에 묻지 않습니다 — rag/web.py)", []
+            reply, hits = answer(store, question, config.TOP_K)
             # ----------------------------------------
         except Exception as e:                  # 에러도 화면에 보여 준다 (예 : 키가 틀리면 AuthenticationError)
             print("  [에러] %s : %s" % (type(e).__name__, e))

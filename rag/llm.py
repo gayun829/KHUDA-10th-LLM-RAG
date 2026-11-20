@@ -22,8 +22,7 @@ def embed(texts, batch_size=64):
     for i in range(0, len(texts), batch_size):
         batch = texts[i:i + batch_size]            # 한 번에 64개씩 보낸다 (요청 한 번에 최대 2,048개)
         # ---------------- TODO 2 ----------------
-        # 힌트 : resp = client.embeddings.create(model=config.EMBED_MODEL, input=batch)
-        resp = None
+        resp = client.embeddings.create(model=config.EMBED_MODEL, input=batch)
         # ----------------------------------------
         if resp is None:                           # TODO 2를 아직 채우지 않았다
             return np.zeros((0, 0), dtype=np.float32)

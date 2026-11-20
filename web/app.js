@@ -7,10 +7,9 @@ const send = document.getElementById("send");
 // 서버에 질문을 보내고 답을 받는다 → {answer: "…", sources: [{n, title, text}, …], seconds: 1.6}
 async function askServer(question) {
   // ---------------- TODO 7 ----------------
-  // 힌트 : const res = await fetch("/api/chat", {method: "POST",
-  //            headers: {"Content-Type": "application/json"}, body: JSON.stringify({question: question})});
-  //        return await res.json();
-  return {answer: "(TODO 7 : 화면이 아직 서버에 묻지 않습니다 — web/app.js)", sources: [], seconds: 0};
+  const res = await fetch("/api/chat", {method: "POST",
+  headers: {"Content-Type": "application/json"}, body: JSON.stringify({question: question})});
+  return await res.json();
   // ----------------------------------------
 }
 

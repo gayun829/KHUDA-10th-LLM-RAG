@@ -37,8 +37,7 @@ def chunk_text(text, size=200, overlap=40):
     step = size - overlap                         # 다음 청크는 step 글자 뒤에서 시작
     for start in range(0, len(text), step):
         # ---------------- TODO 1 ----------------
-        # 힌트 : chunks.append(text[start:start + size])
-        pass
+        chunks.append(text[start:start + size])
         # ----------------------------------------
         if start + size >= len(text):             # 마지막 조각까지 담았으면 끝
             break
